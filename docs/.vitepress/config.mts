@@ -9,7 +9,7 @@ export default defineConfig({
     "A powerful AI writing assistant built into Obsidian. Supports Gemini, OpenAI, Claude, and 300+ models via OpenRouter.",
 
   // ── GitHub Pages base (update to /your-repo-name/ when you push) ──────────
-  base: "/",
+  base: "/Obsidian-AI-Companion/",
 
   // ── Head tags ─────────────────────────────────────────────────────────────
   head: [
@@ -36,7 +36,7 @@ export default defineConfig({
       { text: "📋 Changelog", link: "/reference/changelog" },
       {
         text: "⭐ GitHub",
-        link: "https://github.com/yourusername/obsidian-ai-companion",
+        link: "https://github.com/Hajorda/Obsidian-AI-Companion",
       },
     ],
 
@@ -105,7 +105,7 @@ export default defineConfig({
 
     // ── Social links ─────────────────────────────────────────────────────────
     socialLinks: [
-      { icon: "github", link: "https://github.com/yourusername/obsidian-ai-companion" },
+      { icon: "github", link: "https://github.com/Hajorda/Obsidian-AI-Companion" },
     ],
 
     // ── Built-in search ──────────────────────────────────────────────────────
@@ -116,7 +116,7 @@ export default defineConfig({
     // ── Edit link ────────────────────────────────────────────────────────────
     editLink: {
       pattern:
-        "https://github.com/yourusername/obsidian-ai-companion/edit/main/docs/:path",
+        "https://github.com/Hajorda/Obsidian-AI-Companion/edit/main/docs/:path",
       text: "Edit this page on GitHub",
     },
 
