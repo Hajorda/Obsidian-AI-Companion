@@ -18,7 +18,7 @@ hero:
       link: /guide/quick-start
     - theme: alt
       text: ⭐ GitHub
-      link: https://github.com/yourusername/obsidian-ai-companion
+      link: https://github.com/Hajorda/Obsidian-AI-Companion
 
 features:
   - icon: ✦

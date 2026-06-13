@@ -66,8 +66,8 @@ export class WelcomeModal extends Modal {
     const docLinkWrap = docSection.createEl("p", { cls: "aic-welcome-doc-link-wrap" });
     docLinkWrap.createEl("span", { text: "Read the full guide and tips at: " });
     docLinkWrap.createEl("a", {
-      text: "our documentation site",
-      attr: { href: "https://github.com/hajorda/obsidian-ai-companion", target: "_blank" }
+      text: "hajorda.github.io/Obsidian-AI-Companion",
+      attr: { href: "https://hajorda.github.io/Obsidian-AI-Companion/", target: "_blank" }
     });
 
     // ── Footer / Actions ──────────────────────────────────────────────────────
