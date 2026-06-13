@@ -1,0 +1,160 @@
+/* docs/.vitepress/theme/custom.css
+   Obsidian-purple color system on top of VitePress defaults
+   ─────────────────────────────────────────────────────────── */
+
+:root {
+  /* Brand purple — matches Obsidian's accent */
+  --vp-c-brand-1: #7c3aed;
+  --vp-c-brand-2: #6d28d9;
+  --vp-c-brand-3: #8b5cf6;
+  --vp-c-brand-soft: rgba(124, 58, 237, 0.14);
+
+  /* Slightly warmer neutral backgrounds */
+  --vp-c-bg:      #fafaf9;
+  --vp-c-bg-soft: #f5f5f4;
+  --vp-c-bg-alt:  #efefed;
+}
+
+.dark {
+  --vp-c-brand-1: #a78bfa;
+  --vp-c-brand-2: #8b5cf6;
+  --vp-c-brand-3: #c4b5fd;
+  --vp-c-brand-soft: rgba(167, 139, 250, 0.16);
+
+  --vp-c-bg:      #1a1a1a;
+  --vp-c-bg-soft: #242424;
+  --vp-c-bg-alt:  #2a2a2a;
+}
+
+/* ── Hero ──────────────────────────────────────────────────── */
+.VPHero .name {
+  background: linear-gradient(135deg, #7c3aed 0%, #a78bfa 60%, #f0abfc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Feature grid cards ─────────────────────────────────────── */
+.VPFeature {
+  border-radius: 12px !important;
+  transition: transform 0.18s ease, box-shadow 0.18s ease !important;
+}
+
+.VPFeature:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(124, 58, 237, 0.14) !important;
+}
+
+/* ── Sidebar active link ────────────────────────────────────── */
+.VPSidebarItem.is-active > .item .link {
+  color: var(--vp-c-brand-1) !important;
+  font-weight: 600;
+}
+
+/* ── Inline code ────────────────────────────────────────────── */
+:not(pre) > code {
+  background: var(--vp-c-brand-soft);
+  color: var(--vp-c-brand-1);
+  border-radius: 4px;
+  padding: 2px 5px;
+  font-size: 0.87em;
+}
+
+/* ── Keyboard shortcut chips ────────────────────────────────── */
+kbd {
+  display: inline-block;
+  padding: 1px 7px;
+  font-size: 11px;
+  font-family: ui-monospace, monospace;
+  line-height: 1.8;
+  background: var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 5px;
+  box-shadow: 0 1px 0 var(--vp-c-divider);
+  white-space: nowrap;
+}
+
+/* ── Custom badges ───────────────────────────────────────────── */
+.badge {
+  display: inline-block;
+  padding: 2px 9px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+  vertical-align: middle;
+  letter-spacing: 0.03em;
+}
+
+.badge-new      { background: rgba(124, 58, 237, 0.12); color: #7c3aed; }
+.badge-free     { background: rgba(22, 163, 74,  0.12); color: #16a34a; }
+.badge-hot      { background: rgba(220, 38,  38,  0.12); color: #dc2626; }
+.badge-tip      { background: rgba(234, 179, 8,   0.12); color: #ca8a04; }
+.badge-provider { background: rgba(59, 130, 246,  0.12); color: #3b82f6; }
+
+.dark .badge-new      { color: #a78bfa; }
+.dark .badge-free     { color: #4ade80; }
+.dark .badge-hot      { color: #f87171; }
+.dark .badge-tip      { color: #fbbf24; }
+.dark .badge-provider { color: #60a5fa; }
+
+/* ── Provider pill ───────────────────────────────────────────── */
+.provider-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  border: 1px solid var(--vp-c-divider);
+  background: var(--vp-c-bg-soft);
+  vertical-align: middle;
+  margin: 2px;
+}
+
+/* ── Step list ───────────────────────────────────────────────── */
+.steps ol {
+  list-style: none;
+  counter-reset: step;
+  padding-left: 0;
+}
+
+.steps ol li {
+  counter-increment: step;
+  display: flex;
+  gap: 14px;
+  margin-bottom: 20px;
+  align-items: flex-start;
+}
+
+.steps ol li::before {
+  content: counter(step);
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--vp-c-brand-1);
+  color: #fff;
+  font-weight: 700;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2px;
+}
+
+/* ── Model card (used in docs) ───────────────────────────────── */
+.model-card {
+  display: flex;
+  gap: 12px;
+  padding: 14px 16px;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 10px;
+  margin-bottom: 10px;
+  transition: border-color 0.15s;
+}
+
+.model-card:hover { border-color: var(--vp-c-brand-1); }
+.model-card-emoji { font-size: 24px; flex-shrink: 0; }
+.model-card-name  { font-weight: 700; margin-bottom: 2px; }
+.model-card-meta  { font-size: 12px; color: var(--vp-c-text-2); }

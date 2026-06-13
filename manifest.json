@@ -1,0 +1,11 @@
+{
+  "id": "ai-companion",
+  "name": "AI Companion",
+  "version": "1.0.0",
+  "minAppVersion": "1.4.0",
+  "description": "AI-powered writing assistant with inline editing, diff previews, Q&A, and smart paste automation. Supports Gemini, OpenAI, and Claude.",
+  "author": "hajorda",
+  "authorUrl": "",
+  "fundingUrl": "",
+  "isDesktopOnly": false
+}

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <rect width="120" height="120" rx="28" fill="url(#hbg)"/>
+  <text x="60" y="82" font-size="64" text-anchor="middle" fill="white" font-weight="900" font-family="system-ui">✦</text>
+  <defs>
+    <linearGradient id="hbg" x1="0" y1="0" x2="120" y2="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#6d28d9"/>
+      <stop offset="50%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#c026d3"/>
+    </linearGradient>
+  </defs>
+</svg>

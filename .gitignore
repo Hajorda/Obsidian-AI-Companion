@@ -1,0 +1,17 @@
+# Plugin build output
+main.js
+data.json
+
+# Dependencies
+node_modules/
+
+# Docs build output (do NOT commit — GitHub Actions builds this)
+docs/.vitepress/dist/
+docs/.vitepress/cache/
+
+# Mac
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
